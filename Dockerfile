@@ -2,6 +2,7 @@
 
 FROM ubuntu:12.04.5
 # https://github.com/docker/docker/issues/10324. Ubuntu won't always be able to resolve archive.ubuntu.com
+# Hardcoding is bad but using it to be able to build the image
 
 RUN echo "91.189.92.201 archive.ubuntu.com" >> /etc/hosts ; cat /etc/hosts
 
